@@ -11,8 +11,6 @@
             for(let i=0;i<=10;i++){
                 // document.write(`${a}x ${i}=${a*i}<br>`);
                 str+=`${a} X ${i}=${a*i}<br>`
-                
-
             }
             root.innerHTML=str  
 
@@ -21,8 +19,8 @@
 </head>
 <body>
    
-    <input type="number" id="num"><br>
-    <button onclick="p()">Log in</button>
+    <input type="number" id="num" onchange="p()"><br>
+    <!-- <button onclick="p()">Log in</button> -->
     <div id="root"></div>
 </body>
 </html>
