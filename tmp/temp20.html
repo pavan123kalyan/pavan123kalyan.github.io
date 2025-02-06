@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #con{
+            text-align: center;
+            background-color: aquamarine;
+            width: 30%;
+        }
+    </style>
+    <script>
+        
+        function showData(){
+            let name=document.getElementById("name").value
+            let email=document.getElementById("email").value
+            let password=document.getElementById("password").value
+            let DOB=document.getElementById("DOB").value
+            data.innerHTML=`${name},${email},${password},${DOB}`
+        }
+    </script>
+</head>
+<body>
+    <div id="con">
+    <p><h2>NEW USER SIGNUP FORM</h2></p>
+    <p><input type="text" id="name" placeholder="Enter name"/></p>
+    <p><input type="text" id="email" placeholder="Enter Email"/></p>
+    <p><input type="password" id="password" placeholder="Enter Password"/></p>
+    <p><input type="date" id="DOB" placeholder="Enter DOB"/></p>
+    <button onclick="showData()">Register</button>
+    <div id="data"></div>
+    
+</body>
+</html>
