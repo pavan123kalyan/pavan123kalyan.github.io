@@ -12,12 +12,11 @@
                 // document.write(`${a}x ${i}=${a*i}<br>`);
                 str+=`${a} X ${i}=${a*i}<br>`
             }
-            root.innerHTML=str  
-
+            root.innerHTML=str   
         }
     </script>
 </head>
-<body>
+<body onload="showForm()">
    
     <input type="number" id="num" onchange="p()"><br>
     <!-- <button onclick="p()">Log in</button> -->
