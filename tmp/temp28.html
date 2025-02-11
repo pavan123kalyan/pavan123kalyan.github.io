@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const ShowProducts = () =>{
+        const items=[
+            { id:1,name:'Pavankalyan',price:50},
+            { id:2,name:'Yuvaraj',price:70},
+            { id:3,name:'Gandhi',price:99},
+        ];
+        let str="";
+        items.map((val) =>{
+            str+=`
+            <li>${val.id }-${   val.name }-${val.price}-<button>Add to cart</button></li>`;
+        });
+        divprod.innerHTML=str; 
+    }; 
+
+        //  for(let i=0;i<items.length;i++){
+        //     console.log(items[i]);
+        // }
+        //    items.forEach((val) => {
+        //     console.log(val.name,val.price);
+        // });
+    
+        //        items.map((val,ind,arr) => {
+        //     console.log(val,ind+1,arr);
+        // })
+    </script>
+</head>
+<body onload="ShowProducts()">
+    <h1>My Store</h1>
+    <hr>
+    <div id="divprod"></div>
+
+    <h2>PAVAN's AURA</h2>
+</body>
+</html>
